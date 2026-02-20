@@ -1,0 +1,85 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug-Dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/app/main_dev.dart",
+            "args": [
+                "--flavor",
+                "dev",
+                "-v",
+            ]
+        },
+        {
+            "name": "Debug-Test",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/app/main_test.dart",
+            "args": [
+                "--flavor",
+                "qa",
+                "-v",
+            ]
+        },
+        {
+            "name": "Debug-Prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/app/main_prod.dart",
+            "args": [
+                "--flavor",
+                "prod",
+                "-v",
+            ]
+        },
+        {
+            "name": "Profile-Dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/app/main_dev.dart",
+            "args": [
+                "--profile",
+                "--flavor",
+                "dev",
+                "-v",
+            ]
+        },
+        {
+            "name": "Release-Dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/app/main_dev.dart",
+            "args": [
+                "--release",
+                "--flavor",
+                "dev",
+                "-v",
+            ]
+        },
+        {
+            "name": "Release-Prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/app/main_prod.dart",
+            "args": [
+                "--release",
+                "--flavor",
+                "prod",
+                "-v",
+            ]
+        },
+        {
+            "name": "Chrome Debug-Dev",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/app/main_dev.dart",
+            "args": [
+                "-v",
+                "-d",
+                "chrome"
+            ]
+        }
+    ]
+}

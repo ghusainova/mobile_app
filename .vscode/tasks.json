@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Runner",
+            "type": "shell",
+            "command": "./scripts/build_runner.sh"
+        },
+        {
+            "label": "Watch Runner",
+            "type": "shell",
+            "command": "./scripts/watch_runner.sh"
+        },
+        {
+            "label": "Clear Linter Errors",
+            "type": "shell",
+            "command": "dart fix --apply"
+        },
+        {
+            "label": "Analyze Code",
+            "type": "shell",
+            "command": "flutter analyze"
+        },
+        {
+            "label": "Create Prod-APK",
+            "type": "shell",
+            "command": "flutter build apk --release --flavor prod -t lib/app/main_prod.dart"
+        },
+        {
+            "label": "Create Test-APK",
+            "type": "shell",
+            "command": "flutter build apk --release --flavor qa -t lib/app/main_test.dart"
+        },
+        {
+            "label": "Create Dev-APK",
+            "type": "shell",
+            "command": "flutter build apk --release --flavor dev -t lib/app/main_dev.dart"
+        },
+        {
+            "label": "Mason activate",
+            "type": "shell",
+            "command": "dart pub global activate mason_cli"
+        }
+    ]
+}

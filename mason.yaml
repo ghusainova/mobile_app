@@ -1,0 +1,5 @@
+bricks:
+  module_item:
+    path: bricks/module_item
+  class_model:
+    path: bricks/class_model
